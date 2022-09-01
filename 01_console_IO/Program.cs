@@ -66,8 +66,24 @@ Console.WriteLine(login);
 // constants: const type name...
 const float PI = 3.14F;
 
-//PI = 3.15F; // error - can not modify constant
+//PI = 3.14F; // error - can not modify constant
 
 // -=-=-=-=-=-=-=- Console Input -=-=-=-=-=-=-=-
-Console.Write("Enter your birth year: ");
-Console.ReadLine();
+// ///// user name /////
+Console.Write("Enter your name: ");
+
+string name = Console.ReadLine();
+
+//Console.Write("Hello, ");
+//Console.WriteLine(name);
+
+// string interpolation - inject variable data into string
+Console.WriteLine($"Hello, {name}");
+
+// ///// birth year /////
+Console.Write("Enter birth year: ");
+
+// convert string to int
+int birthYear = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"Your birth year is {birthYear}");
