@@ -6,6 +6,7 @@
     <RootNamespace>_02_data_types</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>02_data_types</AssemblyName>
   </PropertyGroup>
 
 </Project>
