@@ -28,3 +28,30 @@ int days = int.Parse(Console.ReadLine());
 const short workingHoursPerDay = 8;
 
 Console.WriteLine($"Working hours: {days * workingHoursPerDay}");
+
+const int minutesPerDay = 60 * 24;
+
+// -=-=-=-=-=-=-=- Logic Operators -=-=-=-=-=-=-=-
+/*
+    >  (A > B):  5 > 10 = false
+    <  (A < B):  5 < 10 = true
+    >= (A >= B): 5 >= 5 = true
+    <= (A <= B): 5 <= 10 = true
+    == (A == B): 10 == 3 = false
+    != (A != B): 10 != 3 = true
+*/
+
+a = 5;
+b = 10;
+
+Console.WriteLine($"a > b: {a} > {b} = {a > b}");
+Console.WriteLine($"a < b: {a} < {b} = {a < b}");
+Console.WriteLine($"a >= b: {a} >= {b} = {a >= b}");
+Console.WriteLine($"a <= b: {a} <= {b} = {a <= b}");
+Console.WriteLine($"a == b: {a} == {b} = {a == b}");
+Console.WriteLine($"a != b: {a} != {b} = {a != b}");
+
+if(a < b)
+{
+    // code...
+}
