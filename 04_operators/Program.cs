@@ -51,7 +51,62 @@ Console.WriteLine($"a <= b: {a} <= {b} = {a <= b}");
 Console.WriteLine($"a == b: {a} == {b} = {a == b}");
 Console.WriteLine($"a != b: {a} != {b} = {a != b}");
 
+// if statement
 if(a < b)
 {
     // code...
+}
+
+// products
+
+int productsAvailable = 10;
+
+Console.Write("How many products do you want to buy?\nCount: ");
+
+int productsToBuy = int.Parse(Console.ReadLine());
+
+// check availabilty
+Console.WriteLine($"Is available: {productsToBuy <= productsAvailable}");
+
+if (productsAvailable >= productsToBuy)
+{
+    Console.WriteLine("You can buy:)");
+}
+
+// can avoid scopes if we have only one operation in the if
+if (productsAvailable < productsToBuy)
+    Console.WriteLine("You can not buy:(");
+
+// check rectangle is a square
+
+Console.Write("Enter rectangle sides...\nWidth: ");
+float width = float.Parse(Console.ReadLine());
+Console.Write("Length: ");
+float length = float.Parse(Console.ReadLine());
+
+if (width == length)
+{
+    Console.WriteLine("This rectangle is a square!");
+}
+else
+{
+    Console.WriteLine("This rectangle is not a square!");
+}
+
+// check if year is leap
+Console.Write("Enter a year: ");
+short year = short.Parse(Console.ReadLine());
+
+// 2000 % 4: 0
+// 2001 % 4: 1
+// 2002 % 4: 2
+// 2003 % 4: 3
+// 2004 % 4: 0
+if (year % 4 == 0)
+{
+    Console.WriteLine($"{year} is a leap year!");
+}
+else
+{
+    Console.WriteLine($"{year} is not a leap year!");
 }
