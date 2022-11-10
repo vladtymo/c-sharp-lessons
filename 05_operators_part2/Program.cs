@@ -50,3 +50,17 @@ if (number < 0 || (number >= 100 && number <= 200))
     Console.WriteLine("Number is negative or in the range!");
 }
 else Console.WriteLine("Invalid number!");
+
+// check is number in the range [-5, -1] або [5, 10]
+
+Console.Write("Enter your number: ");
+number = int.Parse(Console.ReadLine());
+
+if ((number >= -5 && number <= -1) || (number >= 5 && number <= 10))
+{
+    Console.WriteLine("Your number in the range [-5, -1] or [5, 10].");
+}
+else
+{
+    Console.WriteLine("Your number out of the range!");
+}

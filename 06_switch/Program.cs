@@ -37,3 +37,16 @@ switch (mark)
     case 5: Console.WriteLine("very good!"); break;
     default: Console.WriteLine("Mark is incorect!"); break;
 }
+
+// show the opposite direction (north, south, east, west)
+Console.WriteLine("Enter the direction: ");
+string direction = Console.ReadLine();
+
+switch(direction)
+{
+    case "north": Console.WriteLine("Go South!"); break;
+    case "south": Console.WriteLine("Go North!"); break;
+    case "east": Console.WriteLine("Go West!"); break;
+    case "west": Console.WriteLine("Go East!"); break;
+    default: Console.WriteLine("You entered invalid direction!"); break;
+}

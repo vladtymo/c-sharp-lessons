@@ -11,7 +11,7 @@
     {
         ...code...
     }
- */
+*/
 
 //Console.Write("Enter counter: ");
 //int number = int.Parse(Console.ReadLine());
@@ -51,13 +51,63 @@
 // ###
 // ###########
 
-Console.WriteLine("Enter line length: ");
-int length = int.Parse(Console.ReadLine()); // 7
+//Console.WriteLine("Enter line length: ");
+//int length = int.Parse(Console.ReadLine()); // 7
 
 // length - довжина лінії
 // counter - кількість виконаних ітерацій цикла
 
-for (int counter = 0; counter < length; ++counter)
+//for (int counter = 0; counter < length; ++counter)
+//{
+//    Console.Write("#");
+//}
+
+//Console.Write(new String('#', length));
+
+// Завдання: користувач вводить число, показати числа від 1 до введеного користувачем (1, 2, 3 ...)
+Console.Write("Enter maximum number: ");
+int max = int.Parse(Console.ReadLine()); // 4
+
+//Console.Write("1, ");
+//Console.Write("2, ");
+
+// ------ using [while] cycle
+int number = 1; 
+
+while(number <= max) // true - run iteration
 {
-    Console.Write("#");
+    Console.Write($"{number}, ");
+    ++number; // increment number
 }
+Console.WriteLine("\n---------------------------");
+
+// ------ using [for] cycle
+for (int n = 1; n <= max; ++n)
+{
+    Console.Write($"{n}, ");
+}
+Console.WriteLine("\n---------------------------");
+
+// Завдання: користувач вводить два числа - початок та кінець. Показати всі числа від початку до кінця з кроком 1 (start, ..., end)
+Console.Write("Enter start number: ");
+int start = int.Parse(Console.ReadLine());
+
+Console.Write("Enter finish number: ");
+int finish = int.Parse(Console.ReadLine());
+
+// [while]
+int current = start;
+
+while(current <= finish)
+{
+    Console.Write($"{current}, ");
+    ++current;
+}
+Console.WriteLine("\n---------------------------");
+
+// [for]
+for (int c = start; c <= finish; ++c)
+{
+    Console.Write($"{c}, ");
+}
+Console.WriteLine("\n---------------------------");
