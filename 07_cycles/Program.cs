@@ -111,3 +111,43 @@ for (int c = start; c <= finish; ++c)
     Console.Write($"{c}, ");
 }
 Console.WriteLine("\n---------------------------");
+
+// Завдання: користувач вводить сторони прямокутника і програма повинна його відобразити на екрані певним символом
+// 5, 3
+
+/*
+    @@@@@
+    @@@@@
+    @@@@@
+*/
+
+Console.Write("Enter width: ");
+int width = int.Parse(Console.ReadLine());
+
+Console.Write("Enter height: ");
+int height = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < height; ++i)
+{
+    // показати рядок прямокутника
+    for (int k = 0; k < width; ++k)
+    {
+        Console.Write('@');
+    }
+    // показати новий рядок
+    Console.WriteLine();
+}
+
+// цикли [while] vs [do while]
+
+Console.Write("Enter your age: ");
+int age = int.Parse(Console.ReadLine());
+
+while (age < 0 || age > 120)
+{
+    Console.WriteLine("Enter your age again: ");
+    age = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Good!");
+
