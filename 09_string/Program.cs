@@ -18,9 +18,13 @@ string email = Console.ReadLine();
 Console.WriteLine($"Your address is |{email}|");
 Console.WriteLine($"Trimmed email: |{email.Trim()}|");
 
-string[] words = text.Split(' ', ',', '.', '?', '!');
+string[] words = text.Split(new[] { ' ', ',', '.', '?', '!' }, StringSplitOptions.RemoveEmptyEntries);
 
+Console.WriteLine("Words:");
 for (int i = 0; i < words.Length; ++i)
 {
     Console.WriteLine(words[i]);
 }
+
+string joined = string.Join("-", words);
+Console.WriteLine("Joined string: " + joined);
