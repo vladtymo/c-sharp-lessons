@@ -64,3 +64,11 @@ Console.WriteLine($"Total summ: {summ} UAH");
 //summ += costs[2];
 //summ += costs[3];
 //...
+
+for(int i = 0; i < costs.Length; ++i)
+{
+    if (costs[i] > 100)
+    {
+        Console.WriteLine(costs[i]);
+    }
+}

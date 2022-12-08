@@ -28,3 +28,32 @@ for (int i = 0; i < words.Length; ++i)
 
 string joined = string.Join("-", words);
 Console.WriteLine("Joined string: " + joined);
+
+// Завдання: обрахувати к-сть пробілів в рядку
+
+Console.Write("Enter a message: ");
+string message = Console.ReadLine();
+
+int spaces = 0;
+
+for (int i = 0; i < message.Length; ++i)
+{
+    if (message[i] == ' ')
+    {
+        ++spaces;
+    }
+}
+
+Console.WriteLine("Spaces: " + spaces);
+
+// Відобразити повідомлення справа наліво
+
+Console.WriteLine("Original: " + message);
+
+// [H][o][w][ ][a][r][e][ ][y][o][u]
+
+Console.Write("Reversed: ");
+for (int i = message.Length - 1; i >= 0; --i)
+{
+    Console.Write(message[i]);
+}
