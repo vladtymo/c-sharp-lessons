@@ -34,7 +34,7 @@ Console.WriteLine("Joined string: " + joined);
 Console.Write("Enter a message: ");
 string message = Console.ReadLine();
 
-int spaces = 0;
+int spaces = 0, uppers = 0;
 
 for (int i = 0; i < message.Length; ++i)
 {
@@ -42,9 +42,14 @@ for (int i = 0; i < message.Length; ++i)
     {
         ++spaces;
     }
+    if (char.IsUpper(message[i]))
+    {
+        ++uppers;
+    }
 }
 
 Console.WriteLine("Spaces: " + spaces);
+Console.WriteLine("Upper letters: " + uppers);
 
 // Відобразити повідомлення справа наліво
 
