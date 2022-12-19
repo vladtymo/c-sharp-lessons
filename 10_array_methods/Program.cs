@@ -45,3 +45,15 @@ if (Array.Exists(array, (item) => item == value))
 {
     Console.WriteLine("Value was found!");
 }
+
+// Завдання: створити масив та заповнити його випадковими числами
+
+int[] arr = new int[30];
+
+Random rnd = new Random();
+
+for (int i = 0; i < arr.Length; ++i)
+{
+    arr[i] = rnd.Next(100); // generate random value from 0 to 100
+    Console.Write(arr[i] + " ");
+}
