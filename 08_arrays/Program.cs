@@ -1,7 +1,7 @@
 ﻿// create array template: type[] name = new type[size];
 
 // create array of prices
-double[] prices = new double[20];
+double[] prices = new double[10];
 
 // set element value
 prices[0] = 1300.5;
@@ -19,11 +19,6 @@ for (int index = 0; index < prices.Length; ++index)
     Console.WriteLine($"Element = {prices[index]}");
 }
 
-for (int i = 0; i < 10; ++i)
-{
-    Console.WriteLine($"Product price = {prices[0]}");
-}
-
 // Завдання: зберегти та відобразити список кольорів
 
 // ініціалізація масива
@@ -36,15 +31,15 @@ Console.WriteLine("Colors: " + colors.Length);
 
 // indexes: 0 ... 4
 
-for (int index = 0; index < colors.Length; ++index)
+for (int i = 0; i < colors.Length; ++i)
 {
-    Console.Write($"{colors[index]}, ");
+    Console.Write($"{colors[i]}, ");
 }
 
 // Завдання: обрахувати загальну ціну всіх товарів
 double[] costs = new double[8] { 100.5, 55.2, 120.5, 1000, 12, 99, 300, 550 };
 
-Console.Write("Costs: ");
+Console.Write("\nCosts: ");
 
 // обрахунок суми елементів без використання цикла
 Console.WriteLine($"Total summ: {costs[0] + costs[1] + costs[2] + costs[3] }");

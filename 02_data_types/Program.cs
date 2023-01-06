@@ -25,7 +25,7 @@ short currentYear;
 // set data: name = value;
 currentYear = 2022;
 
-// reset data
+// set data
 currentYear = 1999;
 
 // show value

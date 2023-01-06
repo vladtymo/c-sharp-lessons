@@ -52,7 +52,7 @@ Console.WriteLine($"a == b: {a} == {b} = {a == b}");
 Console.WriteLine($"a != b: {a} != {b} = {a != b}");
 
 // if statement
-if(a < b)
+if (a < b)
 {
     // code...
 }

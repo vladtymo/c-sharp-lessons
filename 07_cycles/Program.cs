@@ -25,7 +25,7 @@
 
 //Console.WriteLine("End!");
 
-// Приклад використання циклу для перегляду всіх значень в масиві
+//// Приклад використання циклу для перегляду всіх значень в масиві
 //string[] emailCollection = { "exmple@gmail.com", "2exmple@gmail.com", "3exmple@gmail.com", "4exmple@gmail.com", "5exmple@gmail.com" };
 
 //for (int counter = 0; counter < 10; ++counter) // counter = 10
@@ -46,16 +46,16 @@
 //}
 
 
-// Завдання: показати на екран лінію із символів решітка '#', довжину линії користувач вводить з клавіатури
-// ######
-// ###
-// ###########
+//// Завдання: показати на екран лінію із символів решітка '#', довжину линії користувач вводить з клавіатури
+//// ######
+//// ###
+//// ###########
 
 //Console.WriteLine("Enter line length: ");
 //int length = int.Parse(Console.ReadLine()); // 7
 
-// length - довжина лінії
-// counter - кількість виконаних ітерацій цикла
+//// length - довжина лінії
+//// counter - кількість виконаних ітерацій цикла
 
 //for (int counter = 0; counter < length; ++counter)
 //{
@@ -66,18 +66,15 @@
 
 // Завдання: користувач вводить число, показати числа від 1 до введеного користувачем (1, 2, 3 ...)
 Console.Write("Enter maximum number: ");
-int max = int.Parse(Console.ReadLine()); // 4
-
-//Console.Write("1, ");
-//Console.Write("2, ");
+int max = int.Parse(Console.ReadLine()); // 6
 
 // ------ using [while] cycle
-int number = 1; 
+int num = 1; 
 
-while(number <= max) // true - run iteration
+while(num <= max) // true - run iteration
 {
-    Console.Write($"{number}, ");
-    ++number; // increment number
+    Console.Write($"{num}, ");
+    ++num; // increment number
 }
 Console.WriteLine("\n---------------------------");
 

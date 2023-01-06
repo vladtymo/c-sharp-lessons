@@ -27,7 +27,6 @@ else
 }
 
 // switch
-
 switch (mark)
 {
     case 1: Console.WriteLine("very bad!"); break;
