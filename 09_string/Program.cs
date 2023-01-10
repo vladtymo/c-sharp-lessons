@@ -3,7 +3,7 @@
 Console.WriteLine($"[2]: {text[2]}"); // w
 Console.WriteLine("Length: " + text.Length);
 
-if (text.Contains("me"))
+if (text.Contains("you"))
 {
     Console.WriteLine("Word 'you' was found!");
 }
@@ -19,6 +19,12 @@ Console.WriteLine($"Your address is |{email}|");
 Console.WriteLine($"Trimmed email: |{email.Trim()}|");
 
 string[] words = text.Split(new[] { ' ', ',', '.', '?', '!' }, StringSplitOptions.RemoveEmptyEntries);
+
+// How
+// are
+// you
+// end
+// red
 
 Console.WriteLine("Words:");
 for (int i = 0; i < words.Length; ++i)
@@ -61,4 +67,20 @@ Console.Write("Reversed: ");
 for (int i = message.Length - 1; i >= 0; --i)
 {
     Console.Write(message[i]);
+}
+Console.WriteLine();
+
+// Завдання: Користувач вводить повідомлення, якщо воно закінчується на '!',
+// тоді відобразити у верхньому регістрі.
+
+Console.Write("Enter a message: ");
+message = Console.ReadLine(); // Hello
+
+if (message[message.Length - 1] == '!')
+{
+    Console.WriteLine(message.ToUpper());
+}
+else
+{
+    Console.WriteLine(message);
 }
