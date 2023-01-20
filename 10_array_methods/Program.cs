@@ -3,13 +3,23 @@
 Console.Write("Enter value to find: ");
 int value = int.Parse(Console.ReadLine());
 
-for (int i = 0; i < array.Length; ++i)
+//for (int i = 0; i < array.Length; ++i)
+//{
+//    if (array[i] == value)
+//    {
+//        Console.WriteLine("Your number was found!");
+//        break; // exit cycle
+//    }
+//}
+
+// пошук індекса елемента {value} в масиві {array}, якщо не знайдено, тоді поверне -1
+if (Array.IndexOf(array, value) != -1)
 {
-    if (array[i] == value)
-    {
-        Console.WriteLine("Your number was found!");
-        break; // exit cycle
-    }
+    Console.WriteLine("Your number was found!");
+}
+else
+{
+    Console.WriteLine("Your number was not found!");
 }
 
 Array.Sort(array);
@@ -30,6 +40,7 @@ for (int i = 0; i < array.Length; ++i)
 }
 Console.WriteLine();
 
+// заповнити масив {array} значенням 7 починаючи з індекса 2 та заповнити 3 елемента
 Array.Fill(array, 7, 2, 3); // fill 3 elements [2][3][4]
 
 Console.Write("Filled array: ");
@@ -41,16 +52,15 @@ Console.WriteLine();
 
 Console.WriteLine("Found value: " + Array.Find(array, (item) => item % 2 != 0));
 
-if (Array.Exists(array, (item) => item == value))
+if (Array.Exists(array, (item) => item < 0))
 {
-    Console.WriteLine("Value was found!");
+    Console.WriteLine("Negative number was found!");
 }
 
 // Завдання: створити масив та заповнити його випадковими числами
+Random rnd = new Random();
 
 int[] arr = new int[30];
-
-Random rnd = new Random();
 
 for (int i = 0; i < arr.Length; ++i)
 {
