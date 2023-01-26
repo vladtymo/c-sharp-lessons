@@ -15,6 +15,11 @@ struct Product
     public bool isInStock;
 
     // functions:
+    // sysntax: access return_type name() { ..code... }
+    public void ShowProduct()
+    {
+        Console.WriteLine($"Product: {name} {color} {price}$ {manufactor}");
+    }
 }
 
 internal class Program
@@ -42,5 +47,12 @@ internal class Program
         myCar.weight = 1350;
 
         Product[] angar = new Product[2] { myPhone, myCar };
+
+        // вивід інформації про продукт
+        myPhone.price += 100;
+        myPhone.ShowProduct(); // виклик функції обʼєкта
+
+        myCar.price += 100;
+        myCar.ShowProduct();   // виклик функції обʼєкта
     }
 }
