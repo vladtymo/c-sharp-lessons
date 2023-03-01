@@ -13,13 +13,15 @@ int value = int.Parse(Console.ReadLine());
 //}
 
 // пошук індекса елемента {value} в масиві {array}, якщо не знайдено, тоді поверне -1
-if (Array.IndexOf(array, value) != -1)
+Console.WriteLine("Index of 10: " + Array.IndexOf(array, 10));
+
+if (Array.IndexOf(array, 10) == -1)
 {
-    Console.WriteLine("Your number was found!");
+    Console.WriteLine("Your number not found!");
 }
 else
 {
-    Console.WriteLine("Your number was not found!");
+    Console.WriteLine("Your number was found!");
 }
 
 Array.Sort(array);

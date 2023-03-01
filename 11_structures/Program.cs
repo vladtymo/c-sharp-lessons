@@ -1,9 +1,13 @@
-﻿// OOP - Object Oriented Programming
+﻿using System.Diagnostics;
+using System.Drawing;
+using System.Xml.Linq;
+
+// OOP - Object Oriented Programming
 
 // Application consists with objects:
 // Object has Properties and Functions
 
-// object prototye
+// object prototype
 struct Product
 {
     // properties:
@@ -14,12 +18,13 @@ struct Product
     public string manufactor;
     public bool isInStock;
 
-    // functions:
+    // functions (methods):
     // sysntax: access return_type name() { ..code... }
     public void ShowProduct()
     {
         Console.WriteLine($"Product: {name} {color} {price}$ {manufactor}");
     }
+    // IncreasePrice()
 }
 
 internal class Program
@@ -52,7 +57,7 @@ internal class Program
         myPhone.price += 100;
         myPhone.ShowProduct(); // виклик функції обʼєкта
 
-        myCar.price += 100;
+        myCar.price -= 1050;
         myCar.ShowProduct();   // виклик функції обʼєкта
     }
 }
