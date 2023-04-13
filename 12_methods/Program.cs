@@ -76,7 +76,7 @@ class Program
 
         myCar.Start();
 
-        for (int i = 0; i < 100008; i++)
+        for (int i = 0; i < 100; i++)
         {
             myCar.Boost();
         }
@@ -103,4 +103,3 @@ class Program
         car2.ShowSpeed();
     }
 }
-
