@@ -13,6 +13,7 @@ class Car
 
     // methods
     // method template: accessor return_type name(parameters) { ... }
+    // void - nothing
     public void Show()
     {
         Console.WriteLine($"Car info: {model}, {year}, {color}");
@@ -62,6 +63,7 @@ class Program
          */
 
         Car myCar = new Car();
+
         myCar.maxSpeed = 220;
         myCar.model = "Infinity FX";
         myCar.year = 2012;
